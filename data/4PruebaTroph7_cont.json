@@ -1,0 +1,73 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 8000,
+    "NumberOfRsrcsInEachCell": 400,
+    "initFile": "4PruebaTroph7",
+    "noZero": "-",
+    "numGen": 2000,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "sendTelegram": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "P0"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 17352,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N0"
+        },
+        {
+            "AssociatedSpecies": [
+                "P1"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 229760,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N1"
+        },
+        {
+            "AssociatedSpecies": [
+                "N0"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 14580,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P0"
+        },
+        {
+            "AssociatedSpecies": [
+                "N1"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 262984,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P1"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}

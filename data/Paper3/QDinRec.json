@@ -1,0 +1,62 @@
+{
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 1000,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "A0",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": ["A0"],
+        "PhenotypicFlexibility": 1.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A1",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": ["A2"],
+        "PhenotypicFlexibility": 1.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A2",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A0|A0",
+        "NumberOfItems": 0,
+        "DirectOffspring": 5,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A1|A2",
+        "NumberOfItems": 0,
+        "DirectOffspring": 5,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

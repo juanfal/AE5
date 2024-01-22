@@ -1,0 +1,40 @@
+{
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 1000,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "A0",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["A2"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A1",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["A2"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "A2",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["A1","A0"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

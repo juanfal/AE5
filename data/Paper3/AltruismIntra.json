@@ -1,0 +1,30 @@
+{
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 200,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "A",
+        "NumberOfItems": 2000,
+        "DirectOffspring": 5,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["A"],
+        "IndirectOffspring": 1,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "B",
+        "NumberOfItems": 2000,
+        "DirectOffspring": 1,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["B"],
+        "IndirectOffspring": 5,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}
+    

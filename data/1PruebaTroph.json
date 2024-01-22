@@ -1,0 +1,95 @@
+{
+    "NumberOfCells": 1,
+    "NumberOfRsrcsInEachCell": 100000,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "1B",
+        "NumberOfItems": 450,
+        "DirectOffspring": 2,
+        "GroupPartners": ["1B"],
+        "PhenotypicFlexibility": 0.5,
+
+        "AssociatedSpecies":   ["1C"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "1B|1B",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["1A"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "1C",
+        "NumberOfItems": 10,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["1B"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "0B",
+        "NumberOfItems": 450,
+        "DirectOffspring": 2,
+        "GroupPartners": ["0B"],
+        "PhenotypicFlexibility": 0.5,
+
+        "AssociatedSpecies":   ["0C"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "0B|0B",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["0A"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "0A",
+        "NumberOfItems": 40000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["0B|0B"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "1A",
+        "NumberOfItems": 40000,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["1B|1B"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "0C",
+        "NumberOfItems": 10,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["0B"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 80000,
+    "NumberOfRsrcsInEachCell": 20,
+    "initFile": "4PruebaTroph8",
+    "noZero": "-",
+    "numGen": 2000,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "sendTelegram": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "P0",
+                "P1"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 294084,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N0"
+        },
+        {
+            "AssociatedSpecies": [
+                "P1",
+                "P0"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 298504,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N1"
+        },
+        {
+            "AssociatedSpecies": [
+                "N0",
+                "N1"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 86,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P0"
+        },
+        {
+            "AssociatedSpecies": [
+                "N1",
+                "N0"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100r",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 96,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P1"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}

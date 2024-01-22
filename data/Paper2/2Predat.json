@@ -1,0 +1,43 @@
+{
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 1000,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "Predator",
+        "NumberOfItems": 20,
+        "DirectOffspring": 0, 
+        "Distribution": "95r",
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "Prey",
+        "NumberOfItems": 500,
+        "DirectOffspring": 2,
+        "Distribution": "85r",
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Predator","Mutant"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "Mutant",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0, 
+        "Distribution": "35h",
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

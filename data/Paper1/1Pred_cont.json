@@ -1,0 +1,30 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 120,
+    "initFile": "Paper1/1Pred",
+    "numGen": 50,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "sendTelegram": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 3,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 12000,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N.sertifer"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": false
+}

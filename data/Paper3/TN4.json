@@ -1,0 +1,62 @@
+{
+    "NumberOfCells": 1,
+    "NumberOfRsrcsInEachCell": 200000,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "gamA0",
+        "NumberOfItems": 200000,
+        "DirectOffspring": 0,
+        "GroupPartners": ["gamB0","gamB1"],
+        "PhenotypicFlexibility": 1.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "gamB0",
+        "NumberOfItems": 200000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "gamB1",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "gamA0|gamB0",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "gamA0|gamB1",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

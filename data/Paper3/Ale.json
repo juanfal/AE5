@@ -1,0 +1,73 @@
+{
+    "NumberOfCells": 1000,
+    "NumberOfRsrcsInEachCell": 200,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "SpA0",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpA1"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SpA1",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpA0"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SpB0",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpB1"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SpB1",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpB0"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SpC0",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpC1"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SpC1",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SpC0"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

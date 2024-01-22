@@ -1,0 +1,104 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 1000,
+    "NumberOfRsrcsInEachCell": 200,
+    "initFile": "Paper3/PolyQD",
+    "numGen": 200,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "sendTelegram": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "PolyB0",
+                "PolyB1",
+                "PolyB2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 98736,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyA0"
+        },
+        {
+            "AssociatedSpecies": [
+                "PolyB0",
+                "PolyB1",
+                "PolyB2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyA1"
+        },
+        {
+            "AssociatedSpecies": [
+                "PolyB0",
+                "PolyB1",
+                "PolyB2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyA2"
+        },
+        {
+            "AssociatedSpecies": [
+                "PolyA0",
+                "PolyA1",
+                "PolyA2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyB0"
+        },
+        {
+            "AssociatedSpecies": [
+                "PolyA0",
+                "PolyA1",
+                "PolyA2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 99264,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyB1"
+        },
+        {
+            "AssociatedSpecies": [
+                "PolyA0",
+                "PolyA1",
+                "PolyA2"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PolyB2"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": false
+}

@@ -1,0 +1,93 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 1000,
+    "NumberOfRsrcsInEachCell": 200,
+    "initFile": "Paper3/AAA_cont",
+    "noZero": "",
+    "numGen": 500,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "sendTelegram": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "SpA1"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 50000,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpA0"
+        },
+        {
+            "AssociatedSpecies": [
+                "SpA0"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 50000,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpA1"
+        },
+        {
+            "AssociatedSpecies": [
+                "SpB1"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 50000,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpB0"
+        },
+        {
+            "AssociatedSpecies": [
+                "SpB0"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 50000,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpB1"
+        },
+        {
+            "AssociatedSpecies": [
+                "SpC1"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpC0"
+        },
+        {
+            "AssociatedSpecies": [
+                "SpC0"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SpC1"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": false
+}
