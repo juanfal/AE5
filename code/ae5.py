@@ -51,11 +51,6 @@ except ImportError:
     print("You need to install the library matplotlib. Copy next line, paste and execute it:")
     print("pip3 install matplotlib")
 try:
-    import numpy
-except ImportError:
-    print("You need to install the library numpy. Copy next line, paste and execute it:")
-    print("pip3 install numpy")
-try:
     import pathlib
 except ImportError:
     print("You need to install the library pathlib. Copy next line, paste and execute it:")
@@ -1535,7 +1530,10 @@ if gOnLinux:
 # init conf files (json and world)
 gArgs = defineAndGetCommandLineArgs()
 gInitConfFile = gArgs["initFile"]  # base file name
-gInDir = "data"
+
+gInDir  = "../data"
+gOutDir = "../results"
+
 # A -> A.json, A.world.txt
 gInitConfCompName, gWorldCompFileName = completeDataFileNames(gInitConfFile, gInDir)
 # 1. A.json -> A_cont.json -> A_cont.json
@@ -1584,7 +1582,6 @@ if gConf["noZero"]:
 
 # OUTPUT DIRS AND FILENAMES
 #
-gOutDir = "results"
 if gArgs["outDir"]:
     gToSaveExcel = True
     if gArgs["outDir"].startswith("/"):
@@ -1719,6 +1716,7 @@ while thereWasZeros: # Sorry, we need this now to repeat the whole experiment
 
         if gConf['p']:
             dplt, seqPobPrev = addPlot(dplt, seqPobPrev)
+
 
         if anyZeros(noZeroListi):
             thereWasZeros = True
