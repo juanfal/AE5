@@ -81,14 +81,7 @@ It is possible to repeat the installation of libraries already installed,
 so if you had any of them but want to ensure you have all the needed ones,
 execute each of the following commands:
 
-    pip3 install argparse
-    pip3 install datetime
-    pip3 install functools
     pip3 install matplotlib
-    pip3 install numpy
-    pip3 install pathlib
-    pip3 install subprocess
-    pip3 install urllib
     pip3 install xlsxwriter
 
 
