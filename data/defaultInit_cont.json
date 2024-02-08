@@ -7,7 +7,7 @@
     "numGen": 10,
     "outDir": null,
     "outFName": null,
-    "p": true,
+    "p": false,
     "redirectStdout": false,
     "saveExcel": false,
     "saveWorld": false,
@@ -21,7 +21,7 @@
                 "A"
             ],
             "IndirectOffspring": 2,
-            "NumberOfItems": 147370,
+            "NumberOfItems": 133140,
             "PhenotypicFlexibility": 0.0,
             "id": "A"
         },

@@ -5,7 +5,7 @@
 # juanfc 2019-02-16
 # ae5 2024-01-22
 
-__version__ = 0.50 # 2024-01-22
+__version__ = 0.51 # 2024-02-08
 # Predation management added 2023-11-14
 
 # ############################################################################# #
@@ -18,28 +18,27 @@ __version__ = 0.50 # 2024-01-22
 # textwrap
 # pprint
 # random
-# pip3 install pathlib
-# pip3 install argparse
-# pip3 install datetime
-# pip3 install numpy
+# pathlib
+# argparse
+# datetime
 # pip3 install xlsxwriter
 # pip3 install matplotlib
-# pip3 install functools
-# pip3 install subprocess
-# pip3 install urllib
+# functools
+# subprocess
+# urllib
 
 # Added to help installation but repeated later
 
-try:
-    import argparse
-except ImportError:
-    print("You need to install the library argparse. Copy next line, paste and execute it:")
-    print("pip3 install argparse")
-try:
-    import datetime
-except ImportError:
-    print("You need to install the library datetime. Copy next line, paste and execute it:")
-    print("pip3 install datetime")
+# try:
+#     import argparse
+# except ImportError:
+#     print("You need to install the library argparse. Copy next line, paste and execute it:")
+#     print("pip3 install argparse")
+# try:
+#     import datetime
+# except ImportError:
+#     print("You need to install the library datetime. Copy next line, paste and execute it:")
+#     print("pip3 install datetime")
 # try:
 #     import functools
 # except ImportError:
@@ -50,21 +49,21 @@ try:
 except ImportError:
     print("You need to install the library matplotlib. Copy next line, paste and execute it:")
     print("pip3 install matplotlib")
-try:
-    import pathlib
-except ImportError:
-    print("You need to install the library pathlib. Copy next line, paste and execute it:")
-    print("pip3 install pathlib")
-try:
-    import subprocess
-except ImportError:
-    print("You need to install the library subprocess. Copy next line, paste and execute it:")
-    print("pip3 install subprocess")
-try:
-    import urllib
-except ImportError:
-    print("You need to install the library urllib. Copy next line, paste and execute it:")
-    print("pip3 install urllib")
+# try:
+#     import pathlib
+# except ImportError:
+#     print("You need to install the library pathlib. Copy next line, paste and execute it:")
+#     print("pip3 install pathlib")
+# try:
+#     import subprocess
+# except ImportError:
+#     print("You need to install the library subprocess. Copy next line, paste and execute it:")
+#     print("pip3 install subprocess")
+# try:
+#     import urllib
+# except ImportError:
+#     print("You need to install the library urllib. Copy next line, paste and execute it:")
+#     print("pip3 install urllib")
 try:
     import xlsxwriter
 except ImportError:
