@@ -29,41 +29,11 @@ __version__ = 0.51 # 2024-02-08
 
 # Added to help installation but repeated later
 
-# try:
-#     import argparse
-# except ImportError:
-#     print("You need to install the library argparse. Copy next line, paste and execute it:")
-#     print("pip3 install argparse")
-# try:
-#     import datetime
-# except ImportError:
-#     print("You need to install the library datetime. Copy next line, paste and execute it:")
-#     print("pip3 install datetime")
-# try:
-#     import functools
-# except ImportError:
-#     print("You need to install the library functools. Copy next line, paste and execute it:")
-#     print("pip3 install functools")
 try:
     import matplotlib
 except ImportError:
     print("You need to install the library matplotlib. Copy next line, paste and execute it:")
     print("pip3 install matplotlib")
-# try:
-#     import pathlib
-# except ImportError:
-#     print("You need to install the library pathlib. Copy next line, paste and execute it:")
-#     print("pip3 install pathlib")
-# try:
-#     import subprocess
-# except ImportError:
-#     print("You need to install the library subprocess. Copy next line, paste and execute it:")
-#     print("pip3 install subprocess")
-# try:
-#     import urllib
-# except ImportError:
-#     print("You need to install the library urllib. Copy next line, paste and execute it:")
-#     print("pip3 install urllib")
 try:
     import xlsxwriter
 except ImportError:
