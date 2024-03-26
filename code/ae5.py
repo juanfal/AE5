@@ -742,8 +742,8 @@ def initExcel():
     gExcelWorkbook.set_properties({
         'title':    'Evolutionary Automata',
         'subject':  gInitConfFile + '_' + gThedatetimeStamp,
-        'author':   'Javier Falgueras, Juan Falgueras, Santiago Elena',
-        'manager':  'Javier Falgueras, Juan Falgueras, Santiago Elena',
+        'author':   'Javier Falgueras, Juan Falgueras, Andrés Moya',
+        'manager':  'Javier Falgueras, Juan Falgueras, Andrés Moya',
         'company':  'Univ. Valencia + Univ. Málaga',
         'category': 'Research Thesis',
         'keywords': 'Evolution Automata',
