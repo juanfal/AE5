@@ -659,30 +659,6 @@ def getDist(iSpecies):
             print("Error in Distribution val (should be 0<=x<=100. Is:", distVal)
             sys.exit(1)
 
-    if "DistType" in gConf["species"][iSpecies] or "DistType" in gConf:
-        if "DistType" in gConf["species"][iSpecies]:
-            dist = gConf["species"][iSpecies]["DistType"]
-            distVal = int(gConf["species"][iSpecies]["DistVal"])
-        else:
-            dist = gConf["DistType"]
-            distVal = int(gConf["DistVal"])
-
-        if dist == "n": # average neighbours distribution
-            distType = NEIGHBOURS_DISTRIBUTION
-        elif dist == 'r':
-            distType = RANDOM_GLOBAL_AVG
-        else:
-            distType = RANDOM_GLOBAL_BY_CELLS
-
-        oldStyle = str(distVal)+dist
-        if "DistType" in gConf["species"][iSpecies]:
-            gConf["species"][iSpecies]["Distribution"] = oldStyle
-        else:
-            gConf["Distribution"] = oldStyle
-
-        if distVal > 100 or distVal < 0:
-            print("Error in Distribution val (should be 0<=x<=100. Is:", distVal)
-            sys.exit(1)
 
 
     return distType, distVal
@@ -899,15 +875,6 @@ def checkConf(conf):
     if "Distribution" in conf and conf["Distribution"][-1] not in "rhn":
         problems += "Distribution global value must end either in r or n\n"
 
-    # Check values for DistType, if there
-    if "DistType" in conf and conf["DistType"] not in "rhn":
-        problems += f"DistType global value must end in r, n or h. You gave {conf['DistType']}\n"
-
-    if "DistVal" in conf and (100 < conf["DistVal"] or 0 > conf["DistVal"]):
-        problems += f"DistVal global value given: {conf['DistVal']}. It must be between 0..100\n"
-
-    if ("DistType" in conf) and ("DistVal" not in conf) or ("DistType" not in conf) and ("DistVal" in conf):
-        problems += "Global. Both DistType/DisVal values must be provided when one of them is provided\n"
 
     previousIds = set([])
     longListSpecies = len(conf["species"])
@@ -920,15 +887,6 @@ def checkConf(conf):
         if "Distribution" in confi and confi["Distribution"][-1] not in "rhn":
             problems += f"Distribution for species {i} must end either in r or n\n"
 
-        if "DistType" in confi and confi["DistType"] not in "rhn":
-            problems += f"DistType for species {i} must end in r, n or h\n"
-
-        if "DistVal" in confi and (100 < confi["DistVal"] or \
-                                                0   > confi["DistVal"]):
-            problems += f"DistVal for species {i} must between 0..100\n"
-
-        if ("DistType" in confi) and ("DistVal" not in confi) or ("DistType" not in confi) and ("DistVal" in confi):
-            problems += f"Species {i}. Both DistType/DisVal values must be provided when one of them is provided\n"
 
         theId = confi["id"]
         # partnerId = confi["GroupPartners"]
@@ -1214,32 +1172,6 @@ For example, for the 'Paradox of the plankton' one of the examples is:
           100h means all the items into 1 cell
 
             """)
-    )
-
-
-    theArgParser.add_argument(
-        "--DistType", type=str,
-        metavar="'str'",
-        default=argparse.SUPPRESS,
-        help=textwrap.dedent("""\
-        It allows to specify the desired type of distribution, separately:
-
-          a) --DistType=r    is RANDOM_GLOBAL_AVG        r
-          b) --DistType=h    is RANDOM_GLOBAL_BY_CELLS   h
-          c) --DistType=n    is NEIGHBOURS_DISTRIBUTION  n
-
-        If used, this parameter cancels the
-        "--Distribution"parameter""")
-    )
-
-    theArgParser.add_argument(
-        "--DistVal", type=int,
-        default=argparse.SUPPRESS, metavar="int",
-        help=textwrap.dedent("""\
-        It specifies the amount (integer) between 0-100
-        for the active kind of distribution (r or n)
-        If used, this parameter cancels
-        "--Distribution" parameter""")
     )
 
 
