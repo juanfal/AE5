@@ -1,0 +1,38 @@
+#  Añadir a json:
+#       --numGen int
+#       --varia
+#       --setRandomSeed int
+#       --verbose
+#       --saveExcel
+#       --outDir 'str'
+#       --outFName 'str'
+#       --NumberOfCells int
+#       --NumberOfRsrcsInEachCell int
+#       --Distribution 'str'
+#       --DistType 'str'
+#       --DistVal int
+#       --species 'str'
+#       -p
+#       --redirectStdout
+#       --swallow
+#       --saveWorld
+#       --noZero 'str'
+#       initFile
+
+
+Global:
+    NumberOfCells
+    NumberOfRsrcsInEachCell
+    species
+
+Species:
+    itemsspecies
+    id
+    Distribution: 0-100 r h n (50h)
+    NumberOfItems
+    DirectOffspring
+    GroupPartners
+    PhenotypicFlexibility
+    AssociatedSpecies
+    IndirectOffspring
+    FitnessVariationLimit

@@ -8,6 +8,37 @@
 __version__ = 0.51 # 2024-02-08
 # Predation management added 2023-11-14
 
+
+
+# TODO:
+# - Quitar el DistVal (ver antes)
+#  Añadir a json:
+#       --numGen int
+#       --varia
+#       --setRandomSeed int
+#       --verbose
+#       --saveExcel
+#       --outDir 'str'
+#       --outFName 'str'
+#       --NumberOfCells int
+#       --NumberOfRsrcsInEachCell int
+#       --Distribution 'str'
+#       --DistType 'str'
+#       --DistVal int
+#       --species 'str'
+#       -p
+#       --redirectStdout
+#       --swallow
+#       --saveWorld
+#       --noZero 'str'
+#       initFile
+
+
+
+
+
+
+
 # ############################################################################# #
 #                                 IMPORTS                                       #
 # ############################################################################# #
@@ -848,7 +879,7 @@ def saveConf():
 
 def checkConf(conf):
     """Verifies conf returning inconsistencies or an empty string"""
-    # TO DO
+    # TODO
     # verify gConf so
     #   - groups agree
     #
