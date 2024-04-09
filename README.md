@@ -1,5 +1,5 @@
 <img style="display: block; margin: auto;"
-src="AE5FrontLogo.png">
+src="./AE5FrontLogo.png">
 
 
 # Autómata Evolutivo 5
@@ -27,7 +27,8 @@ You have many videos explaining the process [like this one](https://www.youtube.
 
 The Terminal command on Windows can be the simple `command.com` you can find it through the "Start" button and searching for `Command Prompt`
 
-<!-- On Windows there is not a default Terminal, but it is easy to install one See footnote <sup id="a1">[1](#f1)</sup>.
+<!-- On Windows there is not a default Terminal, but it is easy to
+install one See footnote <sup id="a1">[1](#f1)</sup>.
  -->
 
 ### On MacOSX/Linux
