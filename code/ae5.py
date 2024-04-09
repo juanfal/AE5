@@ -1366,7 +1366,6 @@ def initPlot():
     for i in range(gNumberOfSpecies):
         plt.plot([0],  seqPobPrev[:,i])
     _ = ax.set_title('Population for each species')
-    # _ = ax.set_xlabel('Generation')
     ax.yaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
 
     ax.grid(visible=True, which='both', color='0.65', linestyle='-')
@@ -1384,7 +1383,8 @@ def addPlot(fig, ax, seqPobPrev, genNumber):
             plt.plot(range(genNumber+1),  seqPobPrev[:,i], label=gConf["species"][i]["id"], color = f'C{i}')
 
     ax.legend(loc='upper left')
-    ax.set_title(f'Generation: {genNumber}')
+    _ = ax.set_xlabel(f'Generation: {genNumber}')
+    ax.set_title('Population for each species')
 
     plt.draw()
     plt.pause(0.0005)
