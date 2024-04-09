@@ -1384,7 +1384,7 @@ def addPlot(fig, ax, seqPobPrev, genNumber):
 
     ax.legend(loc='upper left')
     _ = ax.set_xlabel(f'Generation: {genNumber}')
-    ax.set_title('Population for each species')
+    ax.set_title('Population of each species')
 
     plt.draw()
     plt.pause(0.0005)
