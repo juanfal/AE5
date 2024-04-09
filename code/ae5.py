@@ -88,6 +88,7 @@ from datetime import datetime, timedelta
 
 import numpy as np
 import numpy.random as npr
+import matplotlib.pyplot as plt
 
 # format for printing numpy arrays
 np.set_printoptions(formatter={'int': '{: 7d}'.format})
@@ -1358,28 +1359,38 @@ For species {species["id"]} no value(s) for: {", ".join(problems)}
     return conf
 
 def initPlot():
-    dplt = dynplot()
+    fig, ax = plt.subplots()
+    ax.set_autoscaley_on(True)
+
     seqPobPrev = np.array([gWorld[:,:].sum(axis=0)])
     for i in range(gNumberOfSpecies):
-        dplt.plot([0],  seqPobPrev[:,i])
-    _ = dplt.ax.set_title('Population for each species')
-    _ = dplt.ax.set_xlabel('Generation')
-    dplt.ax.yaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
+        plt.plot([0],  seqPobPrev[:,i])
+    _ = ax.set_title('Population for each species')
+    ax.yaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
 
-    dplt.ax.grid(visible=True, which='both', color='0.65', linestyle='-')
-    dplt.show(permanent=False)
-    return dplt, seqPobPrev
+    ax.grid(visible=True, which='both', color='0.65', linestyle='-')
+    plt.ion()
+    plt.show()
 
-def addPlot(dplt, seqPobPrev):
+    return fig, ax, seqPobPrev
+
+def addPlot(fig, ax, seqPobPrev, genNumber):
     seqPobPrev = np.append(seqPobPrev, [gWorld[:,:].sum(axis=0)], axis=0)
     for i in range(gNumberOfSpecies):
-        dplt.plot(range(genNumber+1),  seqPobPrev[:,i], label=gConf["species"][i]["id"])
+        if genNumber > 1:
+            plt.plot(range(genNumber+1),  seqPobPrev[:,i], color = f'C{i}')
+        else:
+            plt.plot(range(genNumber+1),  seqPobPrev[:,i], label=gConf["species"][i]["id"], color = f'C{i}')
 
-    dplt.ax.legend(loc='upper left')
+    ax.legend(loc='upper left')
+    _ = ax.set_xlabel(f'Generation: {genNumber}')
+    ax.set_title('Population for each species')
 
-    dplt.show(permanent=False)
+    plt.draw()
+    plt.pause(0.0005)
 
-    return dplt, seqPobPrev
+
+    return fig, ax, seqPobPrev
 
 
 
@@ -1555,6 +1566,8 @@ if gConf['redirectStdout']:
 if gConf['p']:
     gInitConfFileNoSlashes = gInitConfFile.replace('/', '-')
     gGlobalPDF = os.path.join(gOutDir, gInitConfFileNoSlashes + '_' + gThedatetimeStamp + ".pdf")
+    if gArgs["verbose"]:
+        print(f"PDF to save: {gGlobalPDF}")
 
 
 if gOnLinux:
@@ -1623,7 +1636,7 @@ while thereWasZeros: # Sorry, we need this now to repeat the whole experiment
     print()
 
     if gConf['p']:
-        dplt, seqPobPrev = initPlot()
+        fig, ax, seqPobPrev = initPlot()
 
     lastTime = None
     if gOnLinux:
@@ -1647,7 +1660,7 @@ while thereWasZeros: # Sorry, we need this now to repeat the whole experiment
         print(f"{genNumber:3d}: {gWorld[:,:].sum(axis=0)} Tot: {gWorld[:,:].sum():8d}")
 
         if gConf['p']:
-            dplt, seqPobPrev = addPlot(dplt, seqPobPrev)
+            fig, ax, seqPobPrev = addPlot(fig, ax, seqPobPrev, genNumber)
 
 
         if anyZeros(noZeroListi):
@@ -1691,11 +1704,11 @@ while thereWasZeros: # Sorry, we need this now to repeat the whole experiment
 
     thereWasZeros = len(noZeroListi) > 0 and anyZeros(noZeroListi)
     # if thereWasZeros:
-    #     if 'dplt' in locals() and gConf['p']:
-    #         print(type(dplt))
-    #         print(dplt)
+    #     if 'plt' in locals() and gConf['p']:
+    #         print(type(plt))
+    #         print(plt)
     #         print("Deleting previous plot")
-    #         dplt.close()
+    #         plt.close()
 
 # END OF WHILE TRUE
 
@@ -1713,7 +1726,7 @@ if gConf['redirectStdout']:
 
 
 if gConf['p']:
-    dplt.psavefig(gGlobalPDF)
+    plt.savefig(gGlobalPDF)
     if genNumber >= gArgs["numGen"]:
         # it got broken by a zero
         input("Press Enter key  ⮐  to exit")
