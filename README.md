@@ -67,14 +67,7 @@ standard command to install it.
 
 The next libraries have to be installed
 
-    argparse
-    datetime 
-    functools 
     matplotlib 
-    numpy
-    pathlib 
-    subprocess 
-    urllib 
     xlsxwriter
 
 It is possible to repeat the installation of libraries already installed, 
