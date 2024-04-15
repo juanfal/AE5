@@ -1541,8 +1541,9 @@ Path(gOutDir).mkdir(parents=True, exist_ok=True)
 if not os.path.isdir(gOutDir):
     Path(gOutDir).mkdir(parents=True)
 
+gInitConfFileNoSlashes = gInitConfFile.replace('/', '-')
 gThedatetimeStamp = startTime.strftime("%Y%m%d-%H%M%S")
-gOutFNameBase = gInitConfFile + '_' + gThedatetimeStamp
+gOutFNameBase = gInitConfFileNoSlashes + '_' + gThedatetimeStamp
 
 
 if gArgs["outFName"]:
@@ -1564,7 +1565,6 @@ if gConf['redirectStdout']:
     sys.stdout=open(os.path.join(gOutDir, gOutFNameBase + "_stdout.txt"), "a", encoding="utf-8")
 
 if gConf['p']:
-    gInitConfFileNoSlashes = gInitConfFile.replace('/', '-')
     gGlobalPDF = os.path.join(gOutDir, gInitConfFileNoSlashes + '_' + gThedatetimeStamp + ".pdf")
     if gArgs["verbose"]:
         print(f"PDF to save: {gGlobalPDF}")
