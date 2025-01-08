@@ -830,7 +830,10 @@ def saveExcel(numGen):
 def saveWorld(genNumber):
     ext = ".world.txt"
     fname = gNewWorldCompFileName[:-10]
-    with open(f"{fname}{genNumber:04d}{ext}" , 'w', encoding="utf-8") as outfile:
+    gendirname = fname + "_Generations"
+    if not os.path.isdir(gendirname):
+        os.makedirs(gendirname)
+    with open(f"{gendirname}/{genNumber:04d}{ext}" , 'w', encoding="utf-8") as outfile:
         for iCell in range(gNumberOfCells):
             print("\t".join(map(str, gWorld[iCell, :])), file=outfile)
 
@@ -1253,7 +1256,7 @@ For example, for the 'Paradox of the plankton' one of the examples is:
     theArgParser.add_argument('--saveWorld',
     action='store_true', default=False,
     help=textwrap.dedent("""\
-    save the World status after each generanion in ./data/...""")
+    save the state of the World after each generation in ./data/...""")
     )
 
 

@@ -1,15 +1,15 @@
 {
     "Distribution": "100n",
-    "NumberOfCells": 600,
-    "NumberOfRsrcsInEachCell": 6,
+    "NumberOfCells": 50,
+    "NumberOfRsrcsInEachCell": 4,
     "initFile": "PPI/ParN",
     "noZero": "",
-    "numGen": 20,
+    "numGen": 100,
     "outDir": null,
     "outFName": null,
     "p": true,
     "redirectStdout": false,
-    "saveExcel": true,
+    "saveExcel": false,
     "saveWorld": false,
     "setRandomSeed": -1,
     "species": [
@@ -22,7 +22,7 @@
             "FitnessVariationLimit": 0,
             "GroupPartners": [],
             "IndirectOffspring": 2,
-            "NumberOfItems": 3484,
+            "NumberOfItems": 0,
             "PhenotypicFlexibility": 0.0,
             "id": "N"
         },

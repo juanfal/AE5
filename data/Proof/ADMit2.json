@@ -1,0 +1,128 @@
+{
+    "NumberOfCells": 600,
+    "NumberOfRsrcsInEachCell": 4,
+    "Distribution": "100n",
+    "species": [
+        {
+        "id": "MKD1",
+        "NumberOfItems": 10,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "Prey",
+        "NumberOfItems": 1000,
+        "DirectOffspring": 2,
+        "GroupPartners": ["Prey"],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["MKD1"],
+        "IndirectOffspring": 2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM+",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": ["MKD1"],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [""],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM+|MKD1",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey|Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "Prey|Prey",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": ["Prey"],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SYM+|MKD1","SYM++|MKD1"],
+        "IndirectOffspring": 3,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "Prey|Prey|Prey",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["SYM++|MKD1+"],
+        "IndirectOffspring": 4,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM++",
+        "NumberOfItems": 0,
+        "DirectOffspring": 2,
+        "GroupPartners": ["MKD1","MKD1+"],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   [],
+        "IndirectOffspring": 0,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "MKD1+",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM++|MKD1",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey|Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        },
+        {
+        "id": "SYM++|MKD1+",
+        "NumberOfItems": 0,
+        "DirectOffspring": 0,
+        "GroupPartners": [],
+        "PhenotypicFlexibility": 0.0,
+
+        "AssociatedSpecies":   ["Prey|Prey|Prey"],
+        "IndirectOffspring": -2,
+        "FitnessVariationLimit": 0
+        }
+    ]
+}

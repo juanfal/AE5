@@ -1,0 +1,86 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 1000000,
+    "NumberOfRsrcsInEachCell": 2,
+    "initFile": "PPI/hide2",
+    "noZero": "",
+    "numGen": 1000,
+    "outDir": null,
+    "outFName": null,
+    "p": false,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "P"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "N"
+            ],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.8,
+            "id": "N"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N|N"
+        },
+        {
+            "AssociatedSpecies": [
+                "P"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "N1"
+            ],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 805968,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N1"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N1|N1"
+        },
+        {
+            "AssociatedSpecies": [
+                "N",
+                "N1"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 318236,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}

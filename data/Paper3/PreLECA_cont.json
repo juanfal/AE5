@@ -1,0 +1,97 @@
+{
+    "Distribution": "2n",
+    "NumberOfCells": 100,
+    "NumberOfRsrcsInEachCell": 100,
+    "initFile": "Paper3/PreLECA",
+    "noZero": "",
+    "numGen": 100,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "SRB"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "PA"
+            ],
+            "IndirectOffspring": 1,
+            "NumberOfItems": 4976,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1"
+        },
+        {
+            "AssociatedSpecies": [
+                "SRB"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "PA"
+            ],
+            "IndirectOffspring": 1,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1>"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "PA"
+        },
+        {
+            "AssociatedSpecies": [
+                "SRB"
+            ],
+            "DirectOffspring": 3,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 1,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1|PA"
+        },
+        {
+            "AssociatedSpecies": [
+                "SRB"
+            ],
+            "DirectOffspring": 3,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 1,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1>|PA"
+        },
+        {
+            "AssociatedSpecies": [
+                "MKD1|PA",
+                "MKD1",
+                "MKD1>",
+                "MKD1>|PA"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 1,
+            "NumberOfItems": 4986,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SRB"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}

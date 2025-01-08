@@ -1,0 +1,59 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 2210,
+    "NumberOfRsrcsInEachCell": 18,
+    "initFile": "PPI/hide",
+    "noZero": "",
+    "numGen": 500,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "P"
+            ],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "N"
+            ],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 13130,
+            "PhenotypicFlexibility": 0.6,
+            "id": "N"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "N|N"
+        },
+        {
+            "AssociatedSpecies": [
+                "N"
+            ],
+            "DirectOffspring": 0,
+            "Distribution": "100n",
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 34,
+            "PhenotypicFlexibility": 0.0,
+            "id": "P"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}

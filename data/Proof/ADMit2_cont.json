@@ -1,0 +1,158 @@
+{
+    "Distribution": "100n",
+    "NumberOfCells": 600,
+    "NumberOfRsrcsInEachCell": 4,
+    "initFile": "Proof/ADMit2",
+    "noZero": "",
+    "numGen": 100,
+    "outDir": null,
+    "outFName": null,
+    "p": true,
+    "redirectStdout": false,
+    "saveExcel": false,
+    "saveWorld": false,
+    "setRandomSeed": -1,
+    "species": [
+        {
+            "AssociatedSpecies": [
+                "Prey"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1"
+        },
+        {
+            "AssociatedSpecies": [
+                "MKD1"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "Prey"
+            ],
+            "IndirectOffspring": 2,
+            "NumberOfItems": 48,
+            "PhenotypicFlexibility": 0.0,
+            "id": "Prey"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 2168,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM"
+        },
+        {
+            "AssociatedSpecies": [
+                ""
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "MKD1"
+            ],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM+"
+        },
+        {
+            "AssociatedSpecies": [
+                "Prey|Prey"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM+|MKD1"
+        },
+        {
+            "AssociatedSpecies": [
+                "SYM+|MKD1",
+                "SYM++|MKD1"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "Prey"
+            ],
+            "IndirectOffspring": 3,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "Prey|Prey"
+        },
+        {
+            "AssociatedSpecies": [
+                "SYM++|MKD1+"
+            ],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": 4,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "Prey|Prey|Prey"
+        },
+        {
+            "AssociatedSpecies": [],
+            "DirectOffspring": 2,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [
+                "MKD1",
+                "MKD1+"
+            ],
+            "IndirectOffspring": 0,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM++"
+        },
+        {
+            "AssociatedSpecies": [
+                "Prey"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "MKD1+"
+        },
+        {
+            "AssociatedSpecies": [
+                "Prey|Prey"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM++|MKD1"
+        },
+        {
+            "AssociatedSpecies": [
+                "Prey|Prey|Prey"
+            ],
+            "DirectOffspring": 0,
+            "FitnessVariationLimit": 0,
+            "GroupPartners": [],
+            "IndirectOffspring": -2,
+            "NumberOfItems": 0,
+            "PhenotypicFlexibility": 0.0,
+            "id": "SYM++|MKD1+"
+        }
+    ],
+    "swallow": false,
+    "varia": false,
+    "verbose": true
+}
